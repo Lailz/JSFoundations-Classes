@@ -47,7 +47,9 @@ class Wallet {
     this.money = money;
   }
 
-  credit = (amount) => (this.money += amount);
+  credit = (amount) => {
+    this.money += amount;
+  };
 
   debit = (amount) => (this.money -= amount);
 }
